@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 const {Schema, model} = mongoose
 
-const theaterSchema = new Schema({
+const theaterSchema = new Schema({ 
     name: {
         type: String,
         required: true
