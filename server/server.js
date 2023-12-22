@@ -8,11 +8,13 @@ app.use(express.json())
 
 const usersRoute = require("./routes/usersRoute");
 const moviesRoute = require("./routes/moviesRoute");
-const theaterRoute = require("./routes/theatersRoute")
+const theaterRoute = require("./routes/theatersRoute");
+const bookingsRoute = require("./routes/bookingsRoute")
 
 app.use("/api/users", usersRoute);
 app.use("/api/movies", moviesRoute);
 app.use("/api/theaters", theaterRoute);
+app.use("/api/bookings",bookingsRoute);
 
 const port = process.env.PORT || 5000;
 
